@@ -1,9 +1,4 @@
 <!DOCTYPE HTML>
-<!--
-	Editorial by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 
 <head>
@@ -17,14 +12,11 @@
 
 <body class="is-preload">
 
-	<!-- Wrapper -->
 	<div id="wrapper">
 
-		<!-- Main -->
 		<div id="main">
 			<div class="inner">
 
-				<!-- Content -->
 				<section>
 					<header class="main">
 						<h1>Ko-Fi Engine</h1>
@@ -33,32 +25,22 @@
 					<h2>My Role</h2>
 					<div class="box">
 						<p style="text-align: justify;">
-							During the development of the game engine, my role for the whole process was as
-							<b>engine programmer</b> working on core functionality and systems needed to create the game
-							<a target="_blank" href="dune.html">Dune: Special Spice Ops</a>.
+							During the development of the game engine, my role for the whole process was as an <b>engine programmer</b> working on core functionality and systems needed to create the game <a target="_blank" href="dune.html">Dune: Special Spice Ops</a>.
 						</p>
 					</div>
 
 					<ul class="actions" style="justify-content: center; display: flex;">
 						<li><a href="#contributions" class="button icon solid fa-angle-double-down"
-								style="font-size: 18px">My Contributions</a></li>
+								style="font-size: 1em">My Contributions</a></li>
 					</ul>
 
-					<h2>About The Project</h2>
+					<h2>About the Project</h2>
 					<p style="text-align: justify;">
-						The Ko-Fi Engine project is a 3D game engine, the development of which started in February 2022
-						and has been improving in parallel
-						to the development of the game.
+						The Ko-Fi Engine project is a 3D game engine, the development of which started in February 2022 and has been improving in parallel to the development of the game.
 
-						The <a target="_blank" href="https://dsso-website.vercel.app/team">Chamfer Studios</a>
-						programming team is the
-						group of 11 university students that developed the engine up to the point it is today, with
-						every member worked in a system of the engine.
+						The <a target="_blank" href="https://dsso-website.vercel.app/team">Chamfer Studios</a> programming team is the group of 11 university students that developed the engine up to the point it is today, with every member working in a system of the engine.
 
-						It started from a seed prototype from a previous course that this programming team developed
-						later on. It was a laborious job we had to get off the ground to
-						be able to create the Dune game. We worked in different branches from the GitHub repository
-						that required weekly merges in order to be all up to date.
+						It started from a seed prototype from a previous course that this programming team developed later on. It was a laborious job we had to get off the ground to be able to create the Dune game. We worked in different branches from the GitHub repository that required weekly merges in order to be all up to date.
 					</p>
 
 					<p>
@@ -90,18 +72,17 @@
 
 					<br>
 
+					<ul class="actions" style="justify-content: center; flex-wrap: wrap;">
+						<li style="margin-bottom: 6px;"><a href="https://dsso-website.vercel.app/engine" target="_blank"
+								class="button icon solid fa-link" style="font-size: 1em">Website</a></li>
+						<li style="margin-bottom: 6px;"><a href="https://github.com/Chamfer-Studios/Ko-Fi-Engine"
+								target="_blank" class="button icon brands fa-github" style="font-size: 1em">Source Code</a></li>
+					</ul>
+
 					<span class="image fit" style="width: 90%; display: block; margin-left: auto; margin-right: auto;">
 						<a href="https://dsso-website.vercel.app/engine" target="_blank"><img
 								style="text-align: center;" src="images/kofi_engine_main.png" alt="" /></a>
 					</span>
-
-					<ul class="actions" style="justify-content: center; flex-wrap: wrap;">
-						<li style="margin-bottom: 6px;"><a href="https://dsso-website.vercel.app/engine" target="_blank"
-								class="button icon solid fa-link" style="font-size: 20px">Website</a></li>
-						<li style="margin-bottom: 6px;"><a href="https://github.com/Chamfer-Studios/Ko-Fi-Engine"
-								target="_blank" class="button icon brands fa-github" style="font-size: 20px">Source
-								Code</a></li>
-					</ul>
 
 					<hr class="major" />
 
@@ -116,20 +97,13 @@
 						<div class="col-6 col-12-small">
 							<h2>Data Structures & Importers</h2>
 							<p style="text-align: justify;">
-								In the Ko-Fi Engine project, every data structure we created is called a "Resource" and
-								they are used for different purposes. These Resources are Meshes, Shaders, Textures &
-								Animations; and inherit from a parent class.
+								In the Ko-Fi Engine project, every data structure we created is called a "Resource" and they are used for different purposes. These Resources are Meshes, Shaders, Textures & Animations; and inherit from a parent class.
 								<br>
 								<br>
-								We needed to refactor the importing methods that were present in the prototype as they
-								required a better organization and more features. We went with a Singleton structure for
-								these importers as a convenience for the code quality.
+								We needed to refactor the importing methods that were present in the prototype as they required a better organization and more features. We went with a Singleton structure for these importers as a convenience for the code quality.
 								<br>
 								<br>
-								To organize the engine scenes we used JSON files. This serialization takes care on
-								how the gameobjects are saved to these files, using virtual methods and avoiding trees
-								inside
-								the JSON by using UIDs for parenting these gameobjects.
+								To organize the engine scenes we used JSON files. This serialization takes care of how the gameobjects are saved to these files, using virtual methods and avoiding trees inside the JSON by using UIDs for parenting these gameobjects.
 							</p>
 						</div>
 					</div>
@@ -139,30 +113,15 @@
 
 					<h2>Resource Manager</h2>
 					<p style="text-align: justify;">
-						We programmed the engine system that takes care of the memory management of the
-						Resources used in scene. The manager is in charge of reading & updating the assets files
-						into the project folder whenever there is any change, this is achieved using
-						pairing between the asset file and a metadata file (.meta), like Unity does.
+						We programmed the engine system that takes care of the memory management of the Resources used in the scene. The manager is in charge of reading & updating the assets files into the project folder whenever there is any change, this is achieved using pairing between the asset file and a metadata file (.meta), like Unity does.
 						<br>
 						<br>
-						Moreover,
-						each type of supported Resource required a new file format in order to reduce reading
-						times by avoiding unncessary data. These new formats were formed of a header (to specify
-						the size and data types to read) and a body containing the raw data.
+						Moreover, each type of supported Resource required a new file format in order to reduce reading times by avoiding unnecessary data. These new formats were formed of a header (to specify the size and data types to read) and a body containing the raw data.
 						<br>
 						<br>
-						The stage of generating metadata files and manage them between programmers took major
-						part of the time. Using STL's maps we paired the asset UID
-						(which is global even in the version control) with its allocated memory, reducing
-						loading
-						times in scenes and optimizing memory usage by only allocating the asset's data once
-						when used in multiple instances.
+						The stage of generating metadata files and managing them between programmers took a major part of the time. Using STL's maps we paired the asset UID (which is global even in the version control) with its allocated memory, reducing loading times in scenes and optimizing memory usage by only allocating the asset's data once when used in multiple instances.
 						<br><br>
-						In order to not use the modification time data from Windows that gave us serious issues
-						with
-						Git and the version control, I implemented a hashing method to know if a file has been
-						modified based on the
-						contents of it using the MD5 method.
+						In order to not use the modification time data from Windows that gave us serious issues with Git and the version control, I implemented a hashing method to know if a file has been modified based on the contents of it using the MD5 method.
 					</p>
 
 					<span class="image fit" style="width: 60%; display: block; margin-left: auto; margin-right: auto">
@@ -181,16 +140,13 @@
 						<div class="col-6 col-12-small">
 							<h2>Audio System</h2>
 							<p style="text-align: justify;">
-								I completed the implementation of an audio system that supports the following gameobject
-								components:
+								I completed the implementation of an audio system that supports the following gameobject components:
 							<ul>
 								<li>Audio Source for single tracks/SFX.</li>
 								<li>Audio Switch for multiple tracks that allows fade in and out between them.</li>
 							</ul>
 
-							It also features offsets and looping in the case two or more music tracks have the same bpm
-							and
-							are intended to perform smooth transitions in between scenarios.
+							It also features offsets and looping in the case two or more music tracks have the same bpm and are intended to perform smooth transitions in between scenarios.
 							<br>
 							<br>
 							The system uses the OpenAL library and the DrWav extension.
@@ -202,11 +158,9 @@
 			</div>
 		</div>
 
-		<!-- Sidebar -->
 		<div id="sidebar">
 			<div class="inner">
 
-				<!-- Menu -->
 				<nav id="menu">
 					<header class="major">
 						<h2>Index</h2>
@@ -218,10 +172,9 @@
 					</ul>
 				</nav>
 
-				<!-- Section -->
 				<section>
 					<header class="major">
-						<h2>Contact</h2>
+						<h2>Contact & Info</h2>
 					</header>
 					<ul class="icons" style="justify-content: center">
 						<li><a href="https://www.linkedin.com/in/yeray-tarifa" target="_blank"
@@ -230,7 +183,7 @@
 						<li><a href="https://github.com/yeraytm" target="_blank" class="icon brands fa-github"
 								style="font-size: 32px;"><span class="label">GitHub</span></a></li>
 						<li><a href="documents/YerayTarifa_GameplayProg_CV.pdf" target="_blank"
-								class="icon solid fa-file-alt" style="font-size: 32px"></a></li>
+								class="icon solid fa-file-pdf" style="font-size: 32px"></a></li>
 					</ul>
 					<ul class="contact">
 						<li class="icon solid fa-envelope"><a href="mailto:yeraytm01@gmail.com"
@@ -242,7 +195,6 @@
 		</div>
 	</div>
 
-	<!-- Scripts -->
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/browser.min.js"></script>
 	<script src="assets/js/breakpoints.min.js"></script>

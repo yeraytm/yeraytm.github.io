@@ -1,13 +1,8 @@
 <!DOCTYPE HTML>
-<!--
-	Editorial by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 
 <head>
-	<title>Dune: Special Spice Ops</title>
+	<title>U.N. Squadron Tribute</title>
 	<link rel="icon" href="images/favicon.ico">
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -16,88 +11,70 @@
 
 <body class="is-preload">
 
-	<!-- Wrapper -->
 	<div id="wrapper">
 
-		<!-- Main -->
 		<div id="main">
 			<div class="inner">
 
-				<!-- Content -->
 				<section>
 					<header class="main">
-						<h1>Dune: Special Spice Ops</h1>
+						<h1>U.N. Squadron Tribute</h1>
 					</header>
 
 					<h2>My Role</h2>
+					<div class="box">
+						<p style="text-align: justify;">
+							My role in the development of the U.N. Squadron Tribute game
+						</p>
+					</div>
+
+					<ul class="actions" style="justify-content: center; display: flex;">
+						<li><a href="#contributions" class="button icon solid fa-angle-double-down"
+								style="font-size: 1em">My Contributions</a></li>
+					</ul>
+
+					<h2>About the Project</h2>
 					<p style="text-align: justify;">
-						The game of Dune: Special Spice Ops was developed using Ko-Fi Engine as you can see in <a
-							href="index.html#projects">Projects</a>.
-						Both the game and engine were being developed at the same time so I was first an engine
-						programmer
-						to then jump into the <b>gameplay programmer</b> role using Lua scripting once the engine
-						modules and tools were finished.
+						About the project
 					</p>
 
 					<br>
 
-					<h2>About The Game</h2>
+					<h2>About the Game</h2>
 					<p style="text-align: justify;">
-						The Dune: Special Spice Ops project is a real-time tactics game focused on stealth, discovery
-						and strategy.
-						It has been in development during spring 2022 by a group of 25 students from the UPC-CITM. The
-						game is based on the Commandos (1998) game by Pyro Studios and the science fiction novels of
-						Dune by Frank Herbert.
-					</p>
-
-					<p style="text-align: justify;">
-						The feudal interstellar society of Dune inspired the narrative of the game and the story of the
-						three characters: Zhib, Nerala and Omozra.
-						As in the novels, the main resource of the world is the spice, an element that will play a role
-						in the mechanics and resource of the game.
+						About the game
 					</p>
 
 					<br>
 
+					<ul class="actions" style="justify-content: center; flex-wrap: wrap;">
+						<li style="margin-bottom: 6px;"><a href="https://omicrxn.github.io/U.N.Squadron/" target="_blank"
+								class="button icon solid fa-link" style="font-size: 1em">Website</a></li>
+						<li style="margin-bottom: 6px;"><a href="https://github.com/Omicrxn/U.N.Squadron/releases/tag/v1.0"
+								target="_blank" class="button icon brands fa-github" style="font-size: 1em">Source Code</a></li>
+					</ul>
+					
 					<div style="text-align:center">
-						<iframe height="60%" width="60%" src="https://www.youtube.com/embed/xQKdZvK3yuo"
+						<iframe width="70%" src="https://www.youtube.com/embed/MZL0K1TqdiU"
 							title="YouTube video player" frameborder="0" allowfullscreen
 							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope">
 						</iframe>
 					</div>
 
-					<br>
-
-					<ul class="actions" style="justify-content: center; display: flex;">
-						<li><a href="https://dsso-website.vercel.app" target="_blank" class="button icon solid fa-link"
-								style="font-size: 20px;
-								margin-top: 1.5em">Website</a></li>
-						<li><a href="https://github.com/Chamfer-Studios/Dune-Special-Spice-Ops/releases" target="_blank"
-								class="button icon brands fa-github" style="font-size: 20px;
-								margin-top: 1.5em">Latest Release</a></li>
-					</ul>
-
-					<br>
-
 					<hr class="major" />
 
-					<h1 style="text-align: center;">My Contributions</h1>
+					<h1 style="text-align: center" id="contributions">My Contributions</h1>
+
 					<br>
 
 					<div class="row">
 						<div class="col-6 col-12-small">
-							<span class="image fit"><img src="images/dune_spice.gif" alt="" /></span>
+							<span class="image fit"><img src="images/un_squadron.png" alt="" /></span>
 						</div>
 						<div class="col-6 col-12-small">
-							<h2>Spice Resource</h2>
+							<h2>HUD & Fonts</h2>
 							<p style="text-align: justify;">
-								I was in charge of the resource of Dune, the spice. My task here was to have sacks
-								around
-								the level that reward the player with a certain quantity of spice when they walk into
-								them. Enemies dropped spice
-								loot as well, but using a random drop rate and a random amount.
-								<br><br>
-								This spice can be used to spell certain abilities and level up the characters.
+								HUD & Fonts
 							</p>
 						</div>
 					</div>
@@ -107,21 +84,13 @@
 
 					<div class="row">
 						<div class="col-6 col-12-small">
-							<h2>Game State: Save & Load</h2>
+							<h2>Power-Ups</h2>
 							<p style="text-align: justify;">
-								As the spice was required in other parts of the game, I needed a way to save & load the
-								game progression. So I dedicated some time to be able to preserve the state of the game
-								using a json file from the Lua scripts, which involved some C++ code from the engine as
-								well.
-								<br><br>
-								This game state file stores information about defeated enemies, the amount of collected
-								spice
-								from the two levels (and the sacks that are already taken) and each characters position
-								when the last checkpoint was obtained.
+								Power-Ups
 							</p>
 						</div>
 						<div class="col-6 col-12-small">
-							<span class="image fit"><img src="images/dune_loot.gif" alt="" /></span>
+							<span class="image fit"><img src="images/un_squadron.png" alt="" /></span>
 						</div>
 					</div>
 
@@ -130,20 +99,12 @@
 
 					<div class="row">
 						<div class="col-6 col-12-small">
-							<span class="image fit"><img src="images/dune_leveling.gif" alt="" /></span>
+							<span class="image fit"><img src="images/un_squadron.png" alt="" /></span>
 						</div>
 						<div class="col-6 col-12-small">
-							<h2>Leveling System</h2>
+							<h2>Controller Implementation & Debugging</h2>
 							<p style="text-align: justify;">
-								Characters presented levels in their abilities so the spice & game state task is also
-								relevant here. This way, I saved the level progress of each ability that the player
-								upgraded
-								its characters to and considered this into the game as well.
-								<br>
-								<br>
-								Then, into the gameplay itself I implemented how each ability level affects the stats of
-								the character, and the logic of a menu where the player upgrades these abilities as you
-								can see in the images.
+								Controller Implementation & Debugging
 							</p>
 						</div>
 					</div>
@@ -152,11 +113,9 @@
 			</div>
 		</div>
 
-		<!-- Sidebar -->
 		<div id="sidebar">
 			<div class="inner">
 
-				<!-- Menu -->
 				<nav id="menu">
 					<header class="major">
 						<h2>Index</h2>
@@ -168,10 +127,9 @@
 					</ul>
 				</nav>
 
-				<!-- Section -->
 				<section>
 					<header class="major">
-						<h2>Contact</h2>
+						<h2>Contact & Info</h2>
 					</header>
 					<ul class="icons" style="justify-content: center">
 						<li><a href="https://www.linkedin.com/in/yeray-tarifa" target="_blank"
@@ -180,7 +138,7 @@
 						<li><a href="https://github.com/yeraytm" target="_blank" class="icon brands fa-github"
 								style="font-size: 32px;"><span class="label">GitHub</span></a></li>
 						<li><a href="documents/YerayTarifa_GameplayProg_CV.pdf" target="_blank"
-								class="icon solid fa-file-alt" style="font-size: 32px"></a></li>
+								class="icon solid fa-file-pdf" style="font-size: 32px"></a></li>
 					</ul>
 					<ul class="contact">
 						<li class="icon solid fa-envelope"><a href="mailto:yeraytm01@gmail.com"
@@ -192,7 +150,6 @@
 		</div>
 	</div>
 
-	<!-- Scripts -->
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/browser.min.js"></script>
 	<script src="assets/js/breakpoints.min.js"></script>
