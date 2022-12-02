@@ -24,7 +24,7 @@
 					<h2>My Role</h2>
 					<div class="box">
 						<p style="text-align: justify;">
-							My role in the development of the U.N. Squadron Tribute game
+							In the development of the U.N. Squadron Tribute game we were a small group, so I worked on different areas of the project but the most remarkable roles were <b>gameplay and UI programmer</b>.
 						</p>
 					</div>
 
@@ -33,16 +33,32 @@
 								style="font-size: 1em">My Contributions</a></li>
 					</ul>
 
-					<h2>About the Project</h2>
-					<p style="text-align: justify;">
-						About the project
-					</p>
+					<div class="row">
+						<div class="col-6 col-12-small">
+							<h2>About the Project</h2>
+							<p style="text-align: justify;">
+								The U.N. Squadron Tribute was a university project made by 4 students in our first year at university and this was my first big videogame project so far. The game was entirely programmed in C++ using SDL2 from scratch, only with support to load images and audio.
+							</p>
+							<p style="text-align: justify;">
+								It was a very fulfilling experience where we all learned a lot. You can find more information on our Web and Wiki.
+							</p>
+							<p style="text-align: justify;">
+								As the game was a tribute, the design and art were easy to implement, although the art of the game needed to be adapted for our application.
+							</p>
+						</div>
+						<div class="col-6 col-12-small">
+							<br>
+							<span class="image fit">
+								<img style="width: 80%; display: block; margin-left: auto; margin-right: auto;" src="images/un_squadron_box.jpg" alt="" />
+							</span>
+						</div>
+					</div>
 
 					<br>
 
 					<h2>About the Game</h2>
 					<p style="text-align: justify;">
-						About the game
+						U.N. Squadron is an arcade shoot’em up single-player game (horizontal scrolling shooter game). It was Initially developed for the Capcom arcade, but two years later, in 1991, it was launched for the SNES (the version we worked on). This game was known in Japan as Area 88 since the game was based on the manga Area 88 created by Karou Shintani.
 					</p>
 
 					<br>
@@ -52,6 +68,8 @@
 								class="button icon solid fa-link" style="font-size: 1em">Website</a></li>
 						<li style="margin-bottom: 6px;"><a href="https://github.com/Omicrxn/U.N.Squadron/releases/tag/v1.0"
 								target="_blank" class="button icon brands fa-github" style="font-size: 1em">Source Code</a></li>
+						<li style="margin-bottom: 6px;"><a href="https://github.com/Omicrxn/U.N.Squadron/wiki" target="_blank"
+							class="button icon solid brands fa-wikipedia-w" style="font-size: 1em">Wiki</a></li>
 					</ul>
 					
 					<div style="text-align:center">
@@ -69,28 +87,13 @@
 
 					<div class="row">
 						<div class="col-6 col-12-small">
-							<span class="image fit"><img src="images/un_squadron.png" alt="" /></span>
+							<span class="image fit"><img src="images/un_squadron_powerups.gif" alt="" /></span>
 						</div>
-						<div class="col-6 col-12-small">
-							<h2>HUD & Fonts</h2>
-							<p style="text-align: justify;">
-								HUD & Fonts
-							</p>
-						</div>
-					</div>
-
-					<hr />
-					<br>
-
-					<div class="row">
 						<div class="col-6 col-12-small">
 							<h2>Power-Ups</h2>
 							<p style="text-align: justify;">
-								Power-Ups
+								U.N. Squadron power-ups are collectable items that can appear when you defeat an enemy, they will move once spawned and disappear towards the left side of the screen. I programmed its behavior and how the stats of the player are boosted.
 							</p>
-						</div>
-						<div class="col-6 col-12-small">
-							<span class="image fit"><img src="images/un_squadron.png" alt="" /></span>
 						</div>
 					</div>
 
@@ -99,12 +102,33 @@
 
 					<div class="row">
 						<div class="col-6 col-12-small">
-							<span class="image fit"><img src="images/un_squadron.png" alt="" /></span>
+							<h2>HUD & Menus</h2>
+							<p style="text-align: justify;">
+								I worked on how the HUD of the gameplay reacts to updates in score, power-ups boosts, health points, etc.
+							</p>
+							<p style="text-align: justify;">
+								Regarding the menus, I implemented the start screen and the level selector in all aspects: visual, audio and programming. I also contributed to the transitions between screens and how the timings were managed.
+							</p>
 						</div>
 						<div class="col-6 col-12-small">
-							<h2>Controller Implementation & Debugging</h2>
+							<span class="image fit"><img src="images/un_squadron_menus.gif" alt="" /></span>
+						</div>
+					</div>
+
+					<hr />
+					<br>
+
+					<div class="row">
+						<div class="col-6 col-12-small">
+							<span class="image fit"><img src="images/un_squadron_debug.gif" alt="" /></span>
+						</div>
+						<div class="col-6 col-12-small">
+							<h2>Controller Integration & Debugging</h2>
 							<p style="text-align: justify;">
-								Controller Implementation & Debugging
+								As a requirement, the game needed the implementation of a system that allows the program to detect when a controller is connected and how its input is managed. I added a debugging view to check the controller is being read correctly.
+							</p>
+							<p style="text-align: justify;">
+								Furthermore, I programmed the debugging functionalities of the game that allows you to visualize data about the loaded resources in the scene like textures, audio FX, fonts, colliders, active particles, etc.
 							</p>
 						</div>
 					</div>
