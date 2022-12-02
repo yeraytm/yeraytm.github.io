@@ -97,12 +97,12 @@
 						<div class="col-6 col-12-small">
 							<h2>Data Structures & Importers</h2>
 							<p style="text-align: justify;">
-								In the Ko-Fi Engine project, every data structure we created is called a "Resource" and they are used for different purposes. These Resources are Meshes, Shaders, Textures & Animations; and inherit from a parent class.
-								<br>
-								<br>
+								In the Ko-Fi Engine project, every data structure we created is called a "Resource" and they are used for different purposes. These resources are meshes, shaders, textures & animations; and all inherit from a parent Resource class.
+							</p>
+							<p style="text-align: justify;">
 								We needed to refactor the importing methods that were present in the prototype as they required a better organization and more features. We went with a Singleton structure for these importers as a convenience for the code quality.
-								<br>
-								<br>
+							</p>
+							<p style="text-align: justify;">
 								To organize the engine scenes we used JSON files. This serialization takes care of how the gameobjects are saved to these files, using virtual methods and avoiding trees inside the JSON by using UIDs for parenting these gameobjects.
 							</p>
 						</div>
@@ -114,13 +114,14 @@
 					<h2>Resource Manager</h2>
 					<p style="text-align: justify;">
 						We programmed the engine system that takes care of the memory management of the Resources used in the scene. The manager is in charge of reading & updating the assets files into the project folder whenever there is any change, this is achieved using pairing between the asset file and a metadata file (.meta), like Unity does.
-						<br>
-						<br>
+					</p>
+					<p style="text-align: justify;">
 						Moreover, each type of supported Resource required a new file format in order to reduce reading times by avoiding unnecessary data. These new formats were formed of a header (to specify the size and data types to read) and a body containing the raw data.
-						<br>
-						<br>
+					</p>
+					<p style="text-align: justify;">
 						The stage of generating metadata files and managing them between programmers took a major part of the time. Using STL's maps we paired the asset UID (which is global even in the version control) with its allocated memory, reducing loading times in scenes and optimizing memory usage by only allocating the asset's data once when used in multiple instances.
-						<br><br>
+					</p>
+					<p style="text-align: justify;">
 						In order to not use the modification time data from Windows that gave us serious issues with Git and the version control, I implemented a hashing method to know if a file has been modified based on the contents of it using the MD5 method.
 					</p>
 
@@ -141,15 +142,18 @@
 							<h2>Audio System</h2>
 							<p style="text-align: justify;">
 								I completed the implementation of an audio system that supports the following gameobject components:
+							</p>
+
 							<ul>
 								<li>Audio Source for single tracks/SFX.</li>
 								<li>Audio Switch for multiple tracks that allows fade in and out between them.</li>
 							</ul>
 
-							It also features offsets and looping in the case two or more music tracks have the same bpm and are intended to perform smooth transitions in between scenarios.
-							<br>
-							<br>
-							The system uses the OpenAL library and the DrWav extension.
+							<p style="text-align: justify;">
+								It also features offsets and looping in the case two or more music tracks have the same bpm and are intended to perform smooth transitions in between scenarios.
+							</p>
+							<p style="text-align: justify;">
+								The system uses the OpenAL library and the DrWav extension.
 							</p>
 						</div>
 					</div>
